@@ -1,0 +1,909 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  /* overflow-x: hidden; */
+  position: absolute;
+}
+
+h1 {
+  font-family: 'Georgia', serif;
+  font-size: 200px;
+}
+
+h2 {
+  font: Bold 50px/57px Georgia;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  /*letter-spacing: 0;*/
+  color: #000000;
+}
+
+h3 {
+  font: Bold 50px/57px Georgia;
+  font-size: 30px;
+  font-weight: bold;
+  /*letter-spacing: 0;*/
+  color: #000000;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Georgia', serif;
+  font-size: 25px;
+  color: #000000;
+}
+
+h5 {
+  font-family: 'Karla', serif;
+  font-size: 15px;
+  color: black;
+}
+
+p {
+  font-family: 'Karla', sans-serif;
+  font-size: 20px;
+  color: #000000;
+}
+h5 .description{
+  font: Italic 23px/27px Karla;
+}
+
+.list {
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+
+.list li {
+  list-style-type: none;
+  
+  width: 600px;
+  height: 375px;
+  opacity: .25;
+  position: absolute;
+  left: 30%;
+  margin-left:-325px;
+  border-radius: 5px;
+  background: black;
+  transition: transform 1s, opacity 1s;
+}
+
+.list .act {
+  opacity: 1;
+  z-index: 10;
+}
+
+.list .prev,
+.list .next {
+  cursor: pointer;
+}
+
+.list .prev {
+  transform: translateX(-220px) scale(.85);
+}
+
+.list .next {
+  transform: translateX(220px) scale(.85);
+}
+
+.list .hide {
+  transform: translateX(-420px) scale(.85);
+}
+
+.list .new-next {
+  transform: translateX(420px) scale(.85);
+}
+
+.list .hide,
+.list .new-next {
+  opacity: 0;
+  transition: opacity .5s, transform .5s;
+}
+
+.swipe {
+  width: 400px;
+  height: 250px;
+  position: absolute;
+  background-color: green;
+  border-radius: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+}
+
+p.titrearticlemisenavant{
+  font-family: 'Karla', serif;
+  font-size: 23px;
+  color: black;
+}
+
+
+
+/* class CSS pour les photos
+******************************/
+.c0, .c1, .c2, .c3, .c4 {
+  background-size: cover!important;
+}
+
+.c0 {
+  background-image: url('img/0.jpg')!important;
+}
+.c1 {
+  background-image: url('img/1.jpg')!important;
+}
+.c2 {
+  background-image: url('img/2.jpg')!important;
+}
+.c3 {
+  background-image: url('img/3.jpg')!important;
+}
+.c4 {
+  background-image: url('img/4.jpg')!important;
+}
+.divhorrairestarifs{
+  width: 100%;
+  background: #EDD852 0% 0% no-repeat padding-box;
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  
+}
+.horraires{
+  margin-right: 5vw;
+  
+  display: flex;
+  flex-direction: column;
+  /*background: blue;*/
+
+  flex: 1;
+}
+.tarrification{
+  margin-left: 5vw;
+  
+  display: flex;
+  flex-direction: column;
+  /*background: red;*/
+
+  flex: 1;
+}
+.boutonbilleterieht{
+  width: 88px;
+  height: 30px;
+}
+.contenerht{
+  margin-top: 50px;
+  margin-bottom: 70px;
+  display: flex;
+  padding: 0 10vw;
+  width: 100%;
+}
+div.divphorraires p{
+  margin-bottom: 0;
+}
+div.cliquerprplusdinfos{
+  margin-top: 1em;
+}
+.traitavantdescriptioncliquer{
+  background: #000000;
+  width: 50px;
+  height: 2px;
+}
+.adressebarrejaune p{
+  margin-bottom: 0;
+}
+.precisionstarificationbarrejaune{
+  margin-bottom: 1em;
+  max-width: 350px;
+}
+.boutonbilleterieht{
+  padding: auto auto auto auto;
+  font: Regular 27px/32px Karla;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.7px;
+  color: #000000;
+  opacity: 1;
+	background: #FFFFFF;
+  border:1.5px solid;
+  border-color: #000000;
+  width: 125px;
+  height: 44px;
+}
+.tarifreduitbarrejaune{
+  margin-bottom: 0;
+}
+.separationhorrairestarif{
+  background: black;
+  width: 1px;
+  height: auto;
+}
+div.tarrification h2{
+  line-height: 28px;
+}
+div.horraires h2{
+  line-height: 28px;
+}
+
+
+
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+
+
+.Tfooter {
+  
+  text-align: left;
+  font-family: Karla;
+  font-weight: bold;
+  font-size: 27spx;
+  letter-spacing: 0;
+  color: #000000;
+  opacity: 1;
+  }
+  
+  
+  
+  
+.carousel {
+  margin:60px;
+}
+
+.btn { 
+margin-top: 30px;
+ }
+
+ h2, h2 {
+  margin:60px;
+}
+
+.expopop{
+  color:black;
+  background: #FAFAFA
+  ;
+}
+
+.expop{
+  font-weight: : Bold;
+  font-style:Italic;
+  font-size: 82px;
+  font-family: Georgia;
+}
+
+
+.Tfooter {
+text-align: left;
+font-family: Karla;
+font-weight: bold;
+font-size: 27spx;
+letter-spacing: 0;
+color: #000000;
+opacity: 1;
+}
+
+
+#bigflex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.contenu{
+  display: flex;
+  flex-direction: row;
+  margin: 30px; 
+  font-family: karla;
+  font-size:12px;
+  position: relative;
+  border : solid;
+  height: 350px;
+  width: 600px;
+}
+.logo{
+  max-width: 182px;
+  height:auto;
+}
+
+.conteneur1{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  letter-spacing: 0;
+  color: #000000;
+  opacity: 1;
+  font-family: Karla;
+  font-size: 23px;
+}
+
+.conteneur2{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  letter-spacing: 0;
+  color: #000000;
+  opacity: 1;
+  font-family: Karla;
+  font-size: 23px;
+}
+
+
+.conteneur3{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  letter-spacing: 0;
+  color: #000000;
+  opacity: 1;
+  font-family: Karla;
+  font-size: 23px;
+}
+
+
+.conteneur4{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  letter-spacing: 0;;
+  color: #000000;
+  opacity: 1;
+  font-family: Karla;
+  font-size: 23px;
+}
+
+#miniflex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.slideshow {
+  max-width: 800px;
+  height:auto;
+  margin:auto;
+  background-color: #FAFAFA;
+  justify-content: center;
+  margin-top: 100px;
+}
+.slideshow img {
+
+  justify-content: center;
+  width: 100%;
+}
+
+.btn{
+  max-width: 100px;
+  height: 30px;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: black;
+    outline: none;
+    background: #FAFAFA;
+}
+
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: black;
+    border: none;
+    outline: none;
+    background: #FAFAFA;
+  }
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size:15px;
+}
+
+.titre{
+  font-weight: bold;
+  font-size: 17px; 
+  position: relative;
+}
+
+.fluxJaune2 {
+      width: 225px;
+      background-color: #EDD852;
+      position: relative;
+  }
+
+  .plus{
+    position: absolute;
+    bottom: 10px;
+    right:10px;
+  }
+  
+  .logo{
+    max-height: 75px;
+  }
+  .icon{
+    max-height: 22px;
+    margin-right: 7px;
+  }
+  .mesicons{
+    position:absolute;
+    bottom:0;
+    margin-bottom: 0.8em;
+  }
+  
+  }
+  .fab{
+    width: 40px;
+  }
+
+
+
+.newsletter{
+  border: 1.2px solid black;
+  font-family: 'Karla', sans-serif;
+  padding: 5px 10px 5px;
+  font-size: 15px;
+  width: 310px;
+}
+
+
+
+
+
+
+
+/* ///////////////////////////////////////// */
+
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img.toplogo {
+  max-height: 12vh;
+  margin-top: 5vh;
+  margin-right: 8vw;
+}
+
+h1.toptxt {
+  font: Bold Italic 200px/227px Georgia;
+  font-size: 150px;
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 10vw;
+}
+
+p.toptxt {
+  font: 20px/23px Karla;
+  font-size: 20px;
+  margin-left: 10vw;
+  margin-right: 25vw;
+  color:white;
+}
+
+
+button.toptxt {
+  font: 27px/32px Karla;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.7px;
+  color: #000000;
+  background: #FFFFFF;
+  border: 1.50px solid;
+  border-color: #000000;
+  width: 125px;
+  height: 44px;
+  margin-left: 10vw;
+}
+
+div.monbandeau {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10vh;
+
+}
+
+div.top {
+  background-image: url(img/backtop.png);
+  background-size: 100%;
+  background-position: center;
+  height: 100vh;
+}
+h1.toptxt{
+  color: white;
+}
+ul.naviguation li{
+  color: white;
+}
+
+div.un {
+  background-color: white;
+  height: 15px;
+  margin-top: 2vh;
+  margin-left: 10vw;
+  margin-right: 45vw;
+  margin-bottom: 15px;
+}
+
+div.deux {
+  background-color: white;
+  height: 15px;
+  margin-left: 10vw;
+  margin-right: 50vw;
+  margin-bottom: 15px;
+}
+
+div.trois {
+  background-color: white;
+  height: 15px;
+  margin-left: 10vw;
+  margin-right: 40vw;
+  margin-bottom: -20px;
+}
+
+ul.naviguation {
+  padding:0;
+  font: 20px/23px Karla;
+  font-size: 1vw;
+  list-style-type:none;
+  margin-right: 5vw;
+  margin-top: 7vh;
+  margin-bottom: 9vh;
+  display: flex;
+  justify-content: flex-end;
+}
+ul.naviguation li {
+  margin-left: 30px;
+  flex-direction: row;
+}
+.monbandeaupart2{
+  height: 100%;
+}
+
+  /* ////2eme DIV les expositions à venir fond gris//// */
+
+   /* Les expositions Bloc integrale */
+  
+   .lesexpositions{
+    background-color: #FAFAFA ;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 20vw;
+    padding-right: 20vw;
+  }
+
+
+  /* ceci est l'image de caligraphie sous le titre*/
+
+    .lesexpositions .imagecaligraphie {
+      height: 240px;
+      width: 100%;
+      max-width: 800px;
+      background-image: url(img/AC4_9799_redimensionnernb.png);
+      background-size: cover;
+      background-position: center;
+      margin: 60px auto;
+      position: relative;
+      
+  }
+
+  /* //ceci est le bloc jaunne et son texte décallé sous l'image de caligraphie// */
+    /* le Bloc Jaune */
+
+    .lesexpositions .imagecaligraphie .blocjaunne{
+      height: 35px;
+      width: 250px;
+      background-color: #EDD852;
+      position: absolute;
+      left: -40px;
+      bottom: -20px;
+  }
+
+    /* le texte dans le bloc */  
+
+    .lesexpositions .imagecaligraphie .blocjaunne .textedecalle h4{
+        font-size: 25px;
+        position: absolute;
+        left: 25px;
+        bottom: -20px;
+        width: 400px;
+    }
+   
+  /* //ceci est le Texte et le bouton sous l'image// */
+    /* Le Texte et bouton*/
+    .lesexpositions .textetbouton {
+      display: flex;
+      flex-direction: row;
+    }
+
+    /* LE TEXTE*/
+
+    .lesexpositions .textetbouton .textexpoavenir {
+        max-width: 600px;
+    }
+
+    .lesexpositions .textetbouton .textexpoavenir p{
+        margin-top: 35px;
+    }
+
+    /*LE BOUTON*/
+
+    .lesexpositions .textetbouton .bouton1 {
+     width: 300px;
+    }
+
+    .lesexpositions .textetbouton .bouton1 .bouton11{
+        margin-left: 30px;
+        margin-top: 110px;
+        font: 27px/32px Karla;
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 0.7px;
+        color: #000000;
+        background: #FFFFFF;
+        border: 1.50px solid;
+        border-color: #000000;
+        width: 220px;
+        height: 44px;
+
+      
+    }
+
+     /* ////FIN DE la 2eme DIV les expositions à venir fond gris//// */
+
+     div.artFlux1 h3 {
+      text-align: right;
+      margin-bottom: 10vh;
+    }
+    
+    div.artFlux1 p {
+      text-align: right;
+      margin-bottom: 5vh;
+    }
+    
+    div.divLeftFlux {
+      margin-top: 10vh;
+      margin-right: 5vw;
+    }
+    /*////FinTEXT////
+    -----------------
+    /////BUTTON////*/
+    
+    .buttonFlux{
+      padding: auto auto auto auto;
+      font: 27px/32px Karla;
+      font-size: 18px;
+      text-align: center;
+      letter-spacing: 0.7px;
+      color: #000000;
+      background: #FFFFFF;
+      border: 1.50px solid;
+      border-color: #000000;
+      height: 44px;
+      margin-bottom: 40px;
+    }
+    
+    #buttonFlux1 {
+      width: 200px;
+    }
+    
+    #buttonFlux2 {
+      width: 225px;
+    }
+    
+    #buttonFlux3 {
+      width: 175px;
+    }
+    
+    /*/////FinBUTTON////
+    --------------------
+    ////DIV1////*/
+    
+    div.artFlux1 {
+        margin-top: 5vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-bottom: 20vh;
+        display: flex;
+          flex-direction: row;
+    }
+    
+    .artFlux1img {
+      min-height: 100%;
+      min-width: 375px;
+      background-size: cover;
+      position: relative;
+      background-position: center;
+      background-image: url(img/intertype2nb.jpg);
+      right: -50px;
+      top: 50px;
+      }
+    
+      /* //ceci est le bloc jaunne et son texte décallé sous l'image de caligraphie// */
+        /* le Bloc Jaune */
+    
+       .fluxJaune1 {
+          height: 35px;
+          width: 292px;
+          background-color: #EDD852;
+          position: absolute;
+          left: -80px;
+          top: -18px; 
+      }
+    
+        /* le texte dans le bloc */  
+    
+        .fluxJauneTexte1 {
+            position: absolute;
+            width: 400px;
+            left: -25px;
+            top: -17px;
+        }
+    
+    /*////FinDIV1////*/
+    
+    /*////DIV2////*/
+    
+    div.artFlux2 h3 {
+      text-align: left;
+      margin-bottom: 10vh;
+    }
+    
+    div.artFlux2 p {
+      text-align: left;
+      margin-bottom: 5vh;
+    }
+    
+    div.divRightFlux {
+      margin-top: 10vh;
+      margin-left: 5vw;
+    }
+    
+    div.artFlux2 {
+          margin-top: 5vh;
+          margin-left: 10vw;
+          margin-right: 10vw;
+          margin-bottom: 20vh;
+          display: flex;
+          flex-direction: row-reverse;
+    }
+    
+    .artFlux2img {
+      min-height: 100%;
+      min-width: 375px;
+      background-size: cover;
+      position: relative;
+      display: flex;
+      flex-direction: column-reverse;
+      background-position: center;
+      background-image: url(img/jeux.png);
+      }
+    
+    
+       .fluxJaune2 {
+          height: 35px;
+          width: 303px;
+          background-color: #EDD852;
+          position: absolute;
+          bottom: -16px;
+          left: -50px;
+      }
+    
+        /* le texte dans le bloc */  
+    
+        .fluxJauneTexte2 {
+            position: absolute;
+            width: 400px;
+            left: 150px;
+            bottom: -21px;
+        }
+    /*////FinDIV2////*/
+    
+    /*////DIV3////*/
+    
+    div.artFlux3 h3 {
+      text-align: right;
+      margin-bottom: 10vh;
+    }
+    
+    div.artFlux3 p {
+      text-align: right;
+      margin-bottom: 5vh;
+    }
+    
+    div.artFlux3 {
+          margin-top: 5vh;
+          margin-left: 10vw;
+          margin-right: 10vw;
+          margin-bottom: 20vh;
+          display: flex;
+          flex-direction: row;
+    }
+    
+    .artFlux3img {
+      min-height: 100%;
+      min-width: 350px;
+      left: 100px;
+      background-size: cover;
+      position: relative;
+      display: flex;
+      flex-direction: column-reverse;
+      background-position: center;
+      background-image: url(img/odyssee.jpg);
+      }
+    
+    
+       .fluxJaune3 {
+          height: 35px;
+          width: 243px;
+          background-color: #EDD852;
+          position: absolute;
+          bottom: -18px;
+          left: -75px;
+      }
+    
+        /* le texte dans le bloc */  
+    
+        .fluxJauneTexte3 {
+            position: absolute;
+            width: 400px;
+            left: 100px;
+            bottom: -22px;
+        }
+
+
+    /*////FinDIV2////*/
+.ntma{
+	background-color: #FAFAFA;
+	margin-bottom:100px;
+}
